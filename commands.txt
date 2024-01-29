@@ -1,0 +1,45 @@
+1
+npm init -y 
+2
+npm i --save-dev prisma typescript ts-node @types/node nodemon
+
+3
+write these lines in the tsconfig.json
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "outDir": "dist",
+        "strict": true,
+        "lib": ["esnext"],
+        "esModuleInterop": true
+    }
+}
+
+
+To format prisma codes: npx prisma format
+To run prisma studio: npx prisma studio
+
+4
+npx prisma init --datasource-provider postgresql
+
+5
+npx prisma migrate dev --name init
+
+
+6
+npm i @prisma/client
+
+
+7
+npx prisma generate
+
+
+8
+npm run devStart
+
+
+9
+
+
+
+10
